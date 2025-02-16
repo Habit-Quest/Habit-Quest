@@ -1,0 +1,91 @@
+:root {
+    --health_bar: #e46e6e;
+}
+
+body {
+    margin: 12%;
+    margin-top: 50px;
+}
+
+.health_bar {
+  float: right;
+  width: 70%;
+  height: 25px;
+  border: solid;
+  border-color: black;
+}
+
+.progress_bar {
+  width: 70%;
+  height: 25px;
+  background-color: var(--health_bar);
+}
+
+.arrow {
+    font-size: 15px;
+    margin-left: -5px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.drop_button {
+    height: 25px;
+    border: none;
+    background-color: white;
+    font-size: 100%;
+    text-align: left;
+  }
+  
+  .drop {
+    width: 25%;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0px 50px;
+  }
+
+  .drop:hover .dropdown-content {
+    display: block;
+}
+
+a:hover {
+    background-color: aliceblue;
+}
+
+.heart_img {
+    position: absolute;
+    width: 115px;
+    margin-top: -20px;
+}
+
+@media (max-width: 800px) {
+    body {
+        margin: 5%;
+    }
+}
+
+@media (max-width: 700px) {
+    .drop_button {
+        display: none;
+     }
+     .arrow {
+        display: none;
+     }
+     .hamburger {
+        display: block;
+        font-size: 25px;
+        padding-left: 50px;
+    }
+}
