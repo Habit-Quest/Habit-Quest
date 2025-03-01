@@ -1,0 +1,87 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "User1",
+        "level": 1,
+        "totalXP": 100,
+        "gold": 50,
+        "habits": [
+          {
+            "habitId": 101,
+            "name": "Habit A",
+            "description": "Description of Habit A",
+            "category": "Category 1",
+            "frequency": "Daily",
+            "streak": 5,
+            "progress": {
+              "completedToday": false,
+              "timesCompleted": 10
+            },
+            "rewards": {
+              "xp": 10,
+              "gold": 5
+            }
+          },
+          {
+            "habitId": 102,
+            "name": "Habit B",
+            "description": "Description of Habit B",
+            "category": "Category 2",
+            "frequency": "Weekly",
+            "streak": 2,
+            "progress": {
+              "completedToday": true,
+              "timesCompleted": 4
+            },
+            "rewards": {
+              "xp": 15,
+              "gold": 8
+            }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "username": "User2",
+        "level": 3,
+        "totalXP": 300,
+        "gold": 100,
+        "habits": [
+          {
+            "habitId": 103,
+            "name": "Habit C",
+            "description": "Description of Habit C",
+            "category": "Category 3",
+            "frequency": "Monthly",
+            "streak": 1,
+            "progress": {
+              "completedToday": false,
+              "timesCompleted": 2
+            },
+            "rewards": {
+              "xp": 20,
+              "gold": 10
+            }
+          },
+          {
+            "habitId": 104,
+            "name": "Habit D",
+            "description": "Description of Habit D",
+            "category": "Category 4",
+            "frequency": "Daily",
+            "streak": 10,
+            "progress": {
+              "completedToday": true,
+              "timesCompleted": 30
+            },
+            "rewards": {
+              "xp": 12,
+              "gold": 6
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
