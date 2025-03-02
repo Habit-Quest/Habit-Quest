@@ -120,8 +120,29 @@ footer {
 }
 
 /* Grid Style */
+
 .habit-grid {
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: 3, 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: solid;
+  border-color: black;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.habit-name-column, .frequency-column, .description-column {
+  text-align: center;
+  border-bottom: black solid;
+  padding: 10px;
+  background-color: rgba(228, 110, 110, 0.5);
+  color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.frequency-column {
+  border-left: black solid;
+  border-right: black solid;
+}
+
