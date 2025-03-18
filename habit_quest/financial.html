@@ -30,28 +30,35 @@
 
     <main> 
       <div class="habit-grid">
-        <div class="habit-name-column">
+        <div class = "column-header">
+          <h2>Outcome</h2>
+        </div>
+        <div class="column-header">
           <h2>Habit Name</h2>
         </div>
-        <div class="frequency-column">
+        <div class="column-header">
           <h2>Frequency</h2>
         </div>
-        <div class="description-column">
+        <div class="column-header">
           <h2>Description</h2>
         </div>
         <div class="user-row">
-          <div id="user-habit-name"> 
+          <div id="user-check-box" class="row-cell"> 
+            <button>Completed</button>
+          </div>
+          <div id="user-habit-name" class="row-cell"> 
             <input type="text" placeholder="Habit Name"/>
           </div>
-          <div id="user-frequency" placeholder="Frequency">
-            <input />
+          <div id="user-frequency" class="row-cell">
+            <input type="text" placeholder="Frequency"/>
           </div>
-          <div id="user-description" placeholder="Description" >
-            <input />
+          <div id="user-description" class="row-cell" >
+            <input type="text" placeholder="Description" />
           </div>
         </div>
       </div>
     </main>
+    
     
     <footer>
       <p>&copy; 2025 Habit Quest</p>
