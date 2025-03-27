@@ -191,22 +191,22 @@ button:hover {
   cursor: pointer;
 }
 
-#testAnimation {
+#unfinishedAnimation {
   height: 100px;
   width: 100px;
 }
 
-#testAnimation:hover {
+#unfinishedAnimation:hover {
    color: red;
    border-color: red;
 }
 
-#testAnimation2 {
+#finishedAnimation {
   height: 100px;
   width: 100px;
 }
 
-#testAnimation2:hover {
+#finishedAnimation:hover {
    color: red;
    border-color: red;
 }
@@ -236,5 +236,65 @@ button:hover {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+.heart_hurt {
+  animation: hurt 5s;
+}
+
+@keyframes hurt { 
+  0% {
+    transform: scale(.8);
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(.8);
+  }
+  0% {
+    transform: scale(.8);
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(.8);
+  }
+}
+
+.red_flash {
+  margin: none;
+  padding: none;
+  animation: flash 1s linear;
+}
+
+@keyframes flash { 
+  0% {
+    background-color: red;
+    color: red;
+    border-color: red;
+  }
+  
+  100% {
+    color: red;
+    border-color: black;
+  }
+}
+
+.blue_light {
+  animation: flash 5s;
+}
+
+@keyframes light { 
+  0% {
+    background-color: blue;
+    color: blue;
+    border-color: blue;
+  }
+  100% {
+    color: blue;
+    border-color: black;
   }
 }
