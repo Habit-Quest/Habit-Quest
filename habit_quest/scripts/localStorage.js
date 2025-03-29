@@ -1,26 +1,32 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const habitNameInput = document.querySelector("#user-habit-name input");
-    const frequencyInput = document.querySelector("#user-frequency input");
-    const descriptionInput = document.querySelector("#user-description input");
+    const habitNameInput = document.querySelector("#habit-name-editor");
+    const frequencyInput = document.querySelector("#frequency-editor");
+    const descriptionInput = document.querySelector("#description-editor");
 
-    habitNameInput.value = localStorage.getItem("habitName");
-    frequencyInput.value = localStorage.getItem("frequency");
-    descriptionInput.value = localStorage.getItem("description");
+    habitNameInput.innerHTML = localStorage.getItem("habitName") || "";
+    frequencyInput.innerHTML = localStorage.getItem("habitFrequency") || "";
+    descriptionInput.innerHTML = localStorage.getItem("habitDescription") || "";
+    console.log(habitNameInput)
 
     habitNameInput.addEventListener("input", () => {
-        localStorage.setItem("habitName", habitNameInput.value);
-    });
+        console.log("TEST")
+        localStorage.setItem("habitName", habitNameInput.innerHTML);
+    }, false);
     
     frequencyInput.addEventListener("input", () => {
-        localStorage.setItem("habitFrequency", frequencyInput.value);
-    });
+        localStorage.setItem("habitFrequency", frequencyInput.innerHTML);
+        console.log("TEST2")
+    }, false);
     
     descriptionInput.addEventListener("input", () => {
-        localStorage.setItem("habitDescription", descriptionInput.value);
-    });
+        localStorage.setItem("habitDescription", descriptionInput.innerHTML);
+        console.log("TEST3")
+    }, false);
 
-    console.log(localStorage.getItem("habitName"));
-    console.log(localStorage.getItem("habitFrequency"));
-    console.log(localStorage.getItem("habitDescription"));
 });
+
+// TO DO:
+// local stoage input and the health bar
+// add rows
+// make it responsive
