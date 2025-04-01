@@ -6,10 +6,11 @@
     <meta name="description" content="A video game themed habit tracker. Plan and track personalized habits." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Intellecutal Habits</title>
+    <title>Intellectual Habits</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="scripts/fail_animation.js" defer></script>
     <script src="scripts/quote.js" defer></script>
+    <script src="scripts/localStorage.js" defer></script>
   </head>
   <body>
     <div class="flash_animation">
@@ -21,16 +22,15 @@
         <span class="arrow">▼</span>
         <span class="hamburger">☰</span>
         <div class="dropdown-content">
-          <a href="financial.html">Financial Habits</a>
           <a href="fitness.html">Fitness Habits</a>
+          <a href="financial.html">Financial Habits</a>
           <a href="mental.html">Mental Habits</a>
         </div>
       </div>
-
       <div class="health_bar">
         <img class="heart_img" src="images/heart.png" alt="Heart Icon" />
         <div class="progress_bar"></div>
-    </div>
+      </div>
 
     <main> 
       <div class="habit-grid">
@@ -63,7 +63,22 @@
             </div>
           </div>
         </div>
+        <!-- <div class="user-row">
+          <div id="user-check-box" class="row-cell"> 
+            <button>Completed</button>
+          </div>
+          <div id="user-habit-name" class="row-cell"> 
+            <div class="editor" id= "habit-name-editor" contenteditable="true"> </div>
+          </div>
+          <div id="user-frequency" class="row-cell">
+            <div class="editor" id= "frequency-editor" contenteditable="true"> </div>
+          </div>
+          <div id="user-description" class="row-cell" >
+            <div class="editor" id= "description-editor" contenteditable="true"> </div>
+          </div>
+        </div> -->
       </div>
+      <button id="add-row-button">Add Row</button>
       <footer>
         <p>&copy; 2025 Habit Quest</p>
         <p>WDD231 Jade Miller, Brooke Gines</p>

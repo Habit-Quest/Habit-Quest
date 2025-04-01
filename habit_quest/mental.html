@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="scripts/fail_animation.js" defer></script>
     <script src="scripts/quote.js" defer></script>
+    <script src="scripts/localStorage.js" defer></script>
   </head>
   <body>
     <div class="flash_animation">
@@ -21,51 +22,67 @@
         <span class="arrow">▼</span>
         <span class="hamburger">☰</span>
         <div class="dropdown-content">
-          <a href="financial.html">Financial Habits</a>
           <a href="fitness.html">Fitness Habits</a>
           <a href="intellectual.html">Intellectual Habits</a>
+          <a href="financial.html">Financial Habits</a>
         </div>
       </div>
       <div class="health_bar">
         <img class="heart_img" src="images/heart.png" alt="Heart Icon" />
         <div class="progress_bar"></div>
       </div>
-      <main> 
-        <div class="habit-grid">
-          <div class = "column-header">
-            <h2>Outcome</h2>
-          </div>
-          <div class="column-header">
-            <h2>Habit Name</h2>
-          </div>
-          <div class="column-header">
-            <h2>Frequency</h2>
-          </div>
-          <div class="column-header">
-            <h2>Description</h2>
-          </div>
+
+    <main> 
+      <div class="habit-grid">
+        <div class = "column-header">
+          <h2>Outcome</h2>
+        </div>
+        <div class="column-header">
+          <h2>Habit Name</h2>
+        </div>
+        <div class="column-header">
+          <h2>Frequency</h2>
+        </div>
+        <div class="column-header">
+          <h2>Description</h2>
+        </div>
+        <div class="user-row">
           <div class="user-row">
-            <div class="user-row">
-              <div id="user-check-box" class="row-cell">
-                <button id="unfinishedAnimation">X</button>
-                <button id="finishedAnimation">✓</button>
-              </div>
-              <div id="user-habit-name" class="row-cell">
-                <input type="text" placeholder="Habit Name" />
-              </div>
-              <div id="user-frequency" class="row-cell">
-                <input type="text" placeholder="Frequency" />
-              </div>
-              <div id="user-description" class="row-cell">
-                <input type="text" placeholder="Description" />
-              </div>
+            <div id="user-check-box" class="row-cell">
+              <button id="unfinishedAnimation">X</button>
+              <button id="finishedAnimation">✓</button>
+            </div>
+            <div id="user-habit-name" class="row-cell">
+              <input type="text" placeholder="Habit Name" />
+            </div>
+            <div id="user-frequency" class="row-cell">
+              <input type="text" placeholder="Frequency" />
+            </div>
+            <div id="user-description" class="row-cell">
+              <input type="text" placeholder="Description" />
             </div>
           </div>
         </div>
-        <footer>
-          <p>&copy; 2025 Habit Quest</p>
-          <p>WDD231 Jade Miller, Brooke Gines</p>
-        </footer>
-      </main>
-    </body>
-  </html>
+        <!-- <div class="user-row">
+          <div id="user-check-box" class="row-cell"> 
+            <button>Completed</button>
+          </div>
+          <div id="user-habit-name" class="row-cell"> 
+            <div class="editor" id= "habit-name-editor" contenteditable="true"> </div>
+          </div>
+          <div id="user-frequency" class="row-cell">
+            <div class="editor" id= "frequency-editor" contenteditable="true"> </div>
+          </div>
+          <div id="user-description" class="row-cell" >
+            <div class="editor" id= "description-editor" contenteditable="true"> </div>
+          </div>
+        </div> -->
+      </div>
+      <button id="add-row-button">Add Row</button>
+      <footer>
+        <p>&copy; 2025 Habit Quest</p>
+        <p>WDD231 Jade Miller, Brooke Gines</p>
+      </footer>
+    </main>
+  </body>
+</html>
