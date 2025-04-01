@@ -25,8 +25,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }, false);
 
 });
-
-// TO DO:
-// local stoage input and the health bar
-// add rows
-// make it responsive
