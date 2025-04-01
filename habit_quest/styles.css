@@ -1,10 +1,10 @@
 :root {
-    --health_bar: #e46e6e;
+  --health_bar: #e46e6e;
 }
 
 body {
-    margin: 12%;
-    margin-top: 50px;
+  margin: 12%;
+  margin-top: 50px;
 }
 
 .health_bar {
@@ -23,67 +23,67 @@ body {
 }
 
 .arrow {
-    font-size: 15px;
-    margin-left: -5px;
+  font-size: 15px;
+  margin-left: -5px;
 }
 
 .hamburger {
-    display: none;
+  display: none;
 }
 
 .drop_button {
-    height: 25px;
-    border: none;
-    background-color: white;
-    font-size: 100%;
-    text-align: left;
-  }
-  
-  .drop {
-    margin-top: 50px;
-    width: 25%;
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-  }
-  
-  .dropdown-content a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    padding: 0px 50px;
-  }
+  height: 25px;
+  border: none;
+  background-color: white;
+  font-size: 100%;
+  text-align: left;
+}
 
-  .drop:hover .dropdown-content {
-    display: block;
+ .drop {
+  margin-top: 50px;
+  width: 25%;
+  position: relative;
+  display: inline-block;
+}
+
+ .dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+ .dropdown-content a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 0px 50px;
+}
+
+.drop:hover .dropdown-content {
+  display: block;
 }
 
 a:hover {
-    background-color: aliceblue;
+  background-color: aliceblue;
 }
 
 @media (max-width: 800px) {
-    body {
-        margin: 5%;
-    }
+  body {
+      margin: 5%;
+  }
 }
 
 @media (max-width: 700px) {
-    .drop_button {
-        display: none;
-     }
-     .arrow {
-        display: none;
-     }
-     .hamburger {
-        display: block;
-        font-size: 25px;
-        padding-left: 50px;
-    }
+  .drop_button {
+      display: none;
+   }
+   .arrow {
+      display: none;
+   }
+   .hamburger {
+      display: block;
+      font-size: 25px;
+      padding-left: 50px;
+  }
 }
 
 /* Header */
@@ -104,17 +104,16 @@ header h3 {
 }
 
 /* Footer */
-
 footer {
   text-align: center;
   margin-top: 50px;
   font-size: 10px;
-  display: grid;  
+  display: grid; 
   place-items: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-/* Grid Style */
 
+/* Grid Style */
 .habit-grid {
   margin-top: 75px;
   display: grid;
@@ -177,7 +176,7 @@ footer {
 
 #user-check-box {
   display: flex;
-  align-items: center;  
+  align-items: center; 
 }
 
 button {
@@ -191,24 +190,31 @@ button:hover {
   cursor: pointer;
 }
 
-#testAnimation {
+#unfinishedAnimation {
   height: 100px;
   width: 100px;
+  font-size: 50px;
+  font-style: bold;
+  background-color: transparent;
+  border: none;
+  color: var(--health_bar);
 }
 
-#testAnimation:hover {
-   color: red;
-   border-color: red;
+#unfinishedAnimation:hover {
+  font-size: 60px;
 }
 
-#testAnimation2 {
+#finishedAnimation {
   height: 100px;
   width: 100px;
+  font-size: 50px;
+  background-color: transparent;
+  border: none;
+  color: var(--health_bar);
 }
 
-#testAnimation2:hover {
-   color: red;
-   border-color: red;
+#finishedAnimation:hover {
+  font-size: 60px;
 }
 
 .heart_img {
@@ -221,7 +227,7 @@ button:hover {
   animation: beat 3s infinite;
 }
 
-@keyframes beat { 
+@keyframes beat {
   0% {
     transform: scale(.8);
   }
@@ -236,5 +242,58 @@ button:hover {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+.heart_hurt {
+  animation: hurt 1s;
+}
+
+@keyframes hurt {
+  0% {
+    transform: scale(.8);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.red_flash {
+  margin: none;
+  padding: none;
+  animation: flash 1s linear;
+}
+
+@keyframes flash {
+  0% {
+    background-color: red;
+    color: red;
+    border-color: red;
+  }
+  100% {
+    color: red;
+    border-color: black;
+  }
+}
+
+.blue_light {
+  animation: flash 5s;
+}
+
+@keyframes light {
+  0% {
+    background-color: blue;
+    color: blue;
+    border-color: blue;
+  }
+  100% {
+    color: blue;
+    border-color: black;
   }
 }

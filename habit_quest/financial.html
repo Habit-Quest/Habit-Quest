@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="author" content="Jade Miller and Brooke Gines" />
+    <meta name="description" content="A video game themed habit tracker. Plan and track personalized habits." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Financial Habits</title>
@@ -10,10 +12,11 @@
     <script src="scripts/quote.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>Habit Quest</h1>
-    </header>
-    <div class="drop">
+    <div class="flash_animation">
+      <header>
+        <h1>Habit Quest</h1>
+      </header>
+      <div class="drop">
         <button class="drop_button">Financial Habits</button>
         <span class="arrow">▼</span>
         <span class="hamburger">☰</span>
@@ -22,12 +25,11 @@
           <a href="intellectual.html">Intellectual Habits</a>
           <a href="mental.html">Mental Habits</a>
         </div>
-    </div>
-    
-    <div class="health_bar">
-        <img class="heart_img" src="images/heart.png" alt="Heart Icon">
+      </div>
+      <div class="health_bar">
+        <img class="heart_img" src="images/heart.png" alt="Heart Icon" />
         <div class="progress_bar"></div>
-    </div>
+      </div>
 
     <main> 
       <div class="habit-grid">
@@ -48,22 +50,34 @@
             <button id="testAnimation">X</button>
             <button id="testAnimation2">✔</button>
           </div>
-          <div id="user-habit-name" class="row-cell"> 
-            <input type="text" placeholder="Habit Name"/>
+          <div class="column-header">
+            <h2>Frequency</h2>
           </div>
-          <div id="user-frequency" class="row-cell">
-            <input type="text" placeholder="Frequency"/>
+          <div class="column-header">
+            <h2>Description</h2>
           </div>
-          <div id="user-description" class="row-cell" >
-            <input type="text" placeholder="Description" />
+          <div class="user-row">
+            <div id="user-check-box" class="row-cell">
+              <button id="unfinishedAnimation">X</button>
+              <button id="finishedAnimation">✓</button>
+            </div>
+            <div id="user-habit-name" class="row-cell">
+              <input type="text" placeholder="Habit Name" />
+            </div>
+            <div id="user-frequency" class="row-cell">
+              <input type="text" placeholder="Frequency" />
+            </div>
+            <div id="user-description" class="row-cell">
+              <input type="text" placeholder="Description" />
+            </div>
           </div>
         </div>
+      <footer>
+        <p>&copy; 2025 Habit Quest</p>
+        <p>WDD231 Jade Miller, Brooke Gines</p>
+      </footer>
+    </div>
       </div>
     </main>
-    
-    <footer>
-      <p>&copy; 2025 Habit Quest</p>
-      <p>WDD231 Anna Le Sieur, Jade Miller, Brooke Gines</p>
-    </footer>
   </body>
 </html>
