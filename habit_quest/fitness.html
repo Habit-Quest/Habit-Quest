@@ -29,26 +29,12 @@
         <img class="heart_img" src="images/heart.png" alt="Heart Icon">
         <div class="progress_bar"></div>
     </div>
-  <main> 
-    <div class="habit-grid">
-      <div class = "column-header">
-        <h2>Outcome</h2>
-      </div>
-      <div class="column-header">
-        <h2>Habit Name</h2>
-      </div>
-      <div class="column-header">
-        <h2>Frequency</h2>
-      </div>
-      <div class="column-header">
-        <h2>Description</h2>
-      </div>
-      <div class="user-row">
-        <div id="user-check-box" class="row-cell"> 
-          <button id="testAnimation">X</button>
-          <button id="testAnimation2">✔</button>
+
+    <main> 
+      <div class="habit-grid">
+        <div class = "column-header">
+          <h2>Outcome</h2>
         </div>
-        
         <div class="column-header">
           <h2>Habit Name</h2>
         </div>
@@ -59,6 +45,21 @@
           <h2>Description</h2>
         </div>
         <div class="user-row">
+          <div id="user-check-box" class="row-cell"> 
+            <button id="testAnimation">X</button>
+            <button id="testAnimation2">✔</button>
+          </div>
+          <div id="user-habit-name" class="row-cell"> 
+            <div class="editor" id= "habit-name-editor" contenteditable="true"> </div>
+          </div>
+          <div id="user-frequency" class="row-cell">
+            <div class="editor" id= "frequency-editor" contenteditable="true"> </div>
+          </div>
+          <div id="user-description" class="row-cell" >
+            <div class="editor" id= "description-editor" contenteditable="true"> </div>
+          </div>
+        </div>
+        <!-- <div class="user-row">
           <div id="user-check-box" class="row-cell"> 
             <button>Completed</button>
           </div>
@@ -71,16 +72,14 @@
           <div id="user-description" class="row-cell" >
             <div class="editor" id= "description-editor" contenteditable="true"> </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </main>
-    <button>Add Row</button>
-    
+    <button id="add-row-button">Add Row</button>
     
     <footer>
       <p>&copy; 2025 Habit Quest</p>
       <p>WDD231 Anna Le Sieur, Jade Miller, Brooke Gines</p>
     </footer>
   </body>
-
 </html>
